@@ -19,6 +19,11 @@ app.get('/', function (req, res, next) {
   res.json({msg: 'This is CORS-enabled for all origins!'})
 })
 
+const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffffff']; // List of available colors
+
+const roomPlayerColors = {}; // Object to store the assigned color for each player in a room
+const roomDrawingData = {}; // Object to store drawing data for each room
+
 io.on('connection', (socket) => {
   console.log('New client connected:', socket.id);
 
@@ -29,6 +34,10 @@ io.on('connection', (socket) => {
     }
     socket.currentRoom = room;
     socket.join(room);
+
+    const playerColor = colors[Object.keys(roomPlayerColors).length % colors.length];
+    roomPlayerColors[socket.id] = playerColor;
+    socket.emit('player-color', playerColor);
 
      // Send existing drawing data to the client
      if (roomDrawingData[room]) {
