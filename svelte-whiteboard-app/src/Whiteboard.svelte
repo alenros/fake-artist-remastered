@@ -5,37 +5,64 @@
   const socket = io('http://localhost:5000'); // Connect to the server
 
   let drawing = false;
+  let canvas;
   let context;
 
-  onMount(() => {
-    const canvas = document.getElementById('canvas');
-    context = canvas.getContext('2d');
+  let room = ''; // To store the current room name
 
+  // Event handler for joining a room
+  function joinRoom() {
+    if (room.trim() === '') return;
+    socket.emit('join-room', room);
+  }
+
+  // Event handler for leaving the current room
+  function leaveRoom() {
+    socket.emit('leave-room', room);
+    room = '';
+  }
+
+
+  function handleMouseDown(event) {
+    if (!canvas) return;
+    const { offsetX, offsetY } = event;
+    drawing = true;
+
+    socket.emit('draw', { type: 'start', x: offsetX, y: offsetY, room });
+  }
+
+  function handleMouseMove(event) {
+    if (!canvas) return;
+    if (!drawing) return;
+    const { offsetX, offsetY } = event;
+
+    socket.emit('draw', { type: 'move', x: offsetX, y: offsetY, room });
+  }
+
+  function handleMouseUp(event) {
+    if (!canvas) return;
+    drawing = false;
+  }
+
+  $: if (room) {
+    console.log("Create the canvas and set up listeners when the room is joined");
+    // Create the canvas and set up listeners when the room is joined
+    canvas = document.getElementById('canvas');
+    context = canvas.getContext('2d');
 
     socket.on('draw', (data) => {
       drawOnCanvas(data);
     });
-  });
 
-  function handleMouseDown(event) {
-    const { offsetX, offsetY } = event;
-    drawing = true;
-
-    socket.emit('draw', { type: 'start', x: offsetX, y: offsetY });
-  }
-
-  function handleMouseMove(event) {
-    if (!drawing) return;
-    const { offsetX, offsetY } = event;
-
-    socket.emit('draw', { type: 'move', x: offsetX, y: offsetY });
-  }
-
-  function handleMouseUp(event) {
-    drawing = false;
+    socket.on('existing-drawings', (existingDrawings) => {
+      existingDrawings.forEach((data) => {
+        drawOnCanvas(data);
+      });
+    });
   }
 
   function drawOnCanvas(data) {
+    console.log('drawing on canvas');
     const { type, x, y } = data;
 
     if (type === 'start') {
@@ -48,12 +75,23 @@
   }
 </script>
 
-<canvas
-  id="canvas"
-  width="800"
-  height="600"
-  style="border: 1px solid black;"
-  on:mousedown={handleMouseDown}
-  on:mousemove={handleMouseMove}
-  on:mouseup={handleMouseUp}
-/>
+<div>
+  <h2>Enter Room Name:</h2>
+  <input bind:value={room} placeholder="Room name" />
+  <button on:click={joinRoom}>Join Room</button>
+  {#if room}
+    <button on:click={leaveRoom}>Leave Room</button>
+    <canvas
+      id="canvas"
+      width="800"
+      height="600"
+      style="border: 1px solid black;"
+      on:mousedown={handleMouseDown}
+      on:mousemove={handleMouseMove}
+      on:mouseup={handleMouseUp}
+    />
+    {:else}
+      <canvas id="canvas"/>
+
+  {/if}
+</div>
