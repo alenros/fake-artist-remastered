@@ -128,3 +128,9 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+
+# Ignore VsCode history
+.history
+server/.history
+svelte-whiteboard-app/.history
