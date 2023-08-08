@@ -16,13 +16,19 @@ const io = require("socket.io")(server, {
 // app.use(cors());
 
 app.get('/', function (req, res, next) {
-  res.json({msg: 'This is CORS-enabled for all origins!'})
+  res.json({ msg: 'This is CORS-enabled for all origins!'})
 })
 
 const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffffff']; // List of available colors
 
 const roomPlayerColors = {}; // Object to store the assigned color for each player in a room
 const roomDrawingData = {}; // Object to store drawing data for each room
+const roomWords = {}; // Object to store the random word for each room
+
+function generateRandomWord() {
+  const words = [{ 'Text': 'apple', 'Category': 'food' }, { 'Text': 'banana', 'Category': 'food' }, { 'Text': 'carrot', 'Category': 'food' }, { 'Text': 'dog', 'Category': 'animal' }, { 'Text': 'elephant', 'Category': 'animal' }];
+  return words[Math.floor(Math.random() * words.length)];
+}
 
 io.on('connection', (socket) => {
   console.log('New client connected:', socket.id);
@@ -39,8 +45,16 @@ io.on('connection', (socket) => {
     roomPlayerColors[socket.id] = playerColor;
     socket.emit('player-color', playerColor);
 
-     // Send existing drawing data to the client
-     if (roomDrawingData[room]) {
+    // Generate and assign a random word to the room
+    if (!roomWords[room]) {
+      const randomWord = generateRandomWord();
+      roomWords[room] = randomWord;
+    }
+
+    socket.emit('random-word', roomWords[room]);
+
+    // Send existing drawing data to the client
+    if (roomDrawingData[room]) {
       socket.emit('existing-drawings', roomDrawingData[room]);
     }
   });
@@ -65,7 +79,7 @@ io.on('connection', (socket) => {
       }
       roomDrawingData[data.room].push(data);
     }
-    });
+  });
 
   socket.on('disconnect', () => {
     console.log('Client disconnected:', socket.id);

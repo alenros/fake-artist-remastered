@@ -10,6 +10,7 @@
   let context;
 
   let room = ""; // To store the current room name
+  let secretWord = ""; // To store the random word
 
   // Event handler for joining a room
   function joinRoom() {
@@ -22,6 +23,7 @@
     socket.emit("leave-room", room);
     room = "";
     playerColor = undefined;
+    secretWord = "";
   }
 
   function handleMouseDown(event) {
@@ -67,6 +69,10 @@
       console.log("player color", color);
       playerColor = color;
     });
+
+    socket.on("random-word", (word) => {
+      secretWord = word;
+    });
   }
 
   function drawOnCanvas(data) {
@@ -93,6 +99,9 @@
   <button on:click={joinRoom}>Join Room</button>
   {#if room}
     <button on:click={leaveRoom}>Leave Room</button>
+    {#if secretWord.Text}
+      The category is {secretWord.Category} and the word is {secretWord.Text}
+    {/if}
     <canvas
       id="canvas"
       width="800"
