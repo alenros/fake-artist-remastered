@@ -40,11 +40,11 @@
   // Resizes the canvas to fit the parent element
   // Saves the current canvas image and redraws it after resizing
   function resizeCanvas() {
-    const parent = canvas.parentElement ?? document.body;
-    const savedImage = canvas.toDataURL();
+    const parent = this.canvas.parentElement ?? document.body;
+    const savedImage = this.canvas.toDataURL();
 
-    canvas.width = parent.clientWidth ?? window.innerWidth;
-    canvas.height = parent.clientHeight ?? window.innerHeight;
+    this.canvas.width = parent.clientWidth ?? window.innerWidth;
+    this.canvas.height = parent.clientHeight ?? window.innerHeight;
 
     const img = new Image();
     img.onload = () => {
