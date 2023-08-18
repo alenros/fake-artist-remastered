@@ -2,6 +2,7 @@
   import { io } from "socket.io-client";
   import type { SecretWordModel } from "./models/secret-word-model";
   import GameCanvas from "./components/GameCanvas.svelte";
+  import type { DrawEventModel } from "./models/draw-event-model";
 
   const socket = io("http://localhost:5000"); // Connect to the server
 
@@ -12,7 +13,7 @@
   let context;
 
   let room = ""; // To store the current room name
-  let secretWord: SecretWordModel = {Text: "", Category: ""}; // To store the random word
+  let secretWord: SecretWordModel = { Text: "", Category: "" }; // To store the random word
 
   // Event handler for joining a room
   function joinRoom() {
@@ -33,7 +34,13 @@
     const { offsetX, offsetY } = event;
     drawing = true;
 
-    socket.emit("draw", { type: "start", x: offsetX, y: offsetY, room, color: playerColor });
+    socket.emit("draw", {
+      type: "start",
+      x: offsetX,
+      y: offsetY,
+      room,
+      color: playerColor,
+    });
   }
 
   function handleMouseMove(event) {
@@ -41,7 +48,13 @@
     if (!drawing) return;
     const { offsetX, offsetY } = event;
 
-    socket.emit("draw", { type: "move", x: offsetX, y: offsetY, room, color: playerColor });
+    socket.emit("draw", {
+      type: "move",
+      x: offsetX,
+      y: offsetY,
+      room,
+      color: playerColor,
+    });
   }
 
   function handleMouseUp(event) {
@@ -49,13 +62,17 @@
     drawing = false;
   }
 
+  function handleCanvasEvent(event: CustomEvent<DrawEventModel>) {
+    socket.emit("draw", event.detail);
+  }
+
   $: if (room) {
     console.log(
       "Create the canvas and set up listeners when the room is joined"
     );
     // Create the canvas and set up listeners when the room is joined
-    canvas = document.getElementById("canvas");
-    context = canvas.getContext("2d");
+    // canvas = document.getElementById("canvas");
+    // context = canvas.getContext("2d");
 
     socket.on("draw", (data) => {
       drawOnCanvas(data);
@@ -105,16 +122,6 @@
     {#if secretWord.Text}
       The category is {secretWord.Category} and the word is {secretWord.Text}
     {/if}
-    <canvas
-      id="canvas"
-      width="800"
-      height="600"
-      style="border: 1px solid {playerColor}};"
-      on:mousedown={handleMouseDown}
-      on:mousemove={handleMouseMove}
-      on:mouseup={handleMouseUp}
-    />
-  {:else}
-    <GameCanvas playerColor={'red'} />
+    <GameCanvas {playerColor} {room} on:canvasChange={handleCanvasEvent} />
   {/if}
 </div>
