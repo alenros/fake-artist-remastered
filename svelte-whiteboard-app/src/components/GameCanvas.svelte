@@ -38,7 +38,6 @@
 
   // On mount, set up the canvas and listeners
   onMount(() => {
-    canvas = document.getElementById(canvasId);
     ctx = canvas.getContext("2d");
 
     window.addEventListener("mouseup", () => {
@@ -113,6 +112,7 @@
 
 <canvas
   id={canvasId}
+  bind:this={canvas}
   style="border: 1px solid {playerColor};"
   on:mousedown={handleMouseDown}
   on:mousemove={handleMouseMove}
