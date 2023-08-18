@@ -115,8 +115,6 @@
       on:mouseup={handleMouseUp}
     />
   {:else}
-    <canvas id="canvas" />
-
     <GameCanvas playerColor={'red'} />
   {/if}
 </div>
