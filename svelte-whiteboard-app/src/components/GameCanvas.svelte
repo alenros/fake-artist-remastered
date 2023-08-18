@@ -23,15 +23,14 @@
     });
   });
 
+  // Draw a dot on the canvas
   function drawDot(x: number, y: number) {
     if (!ctx) return;
     ctx.beginPath();
     ctx.arc(x, y, brushSize / 2, 0, Math.PI * 2);
-    ctx.fillStyle = !isErasing ? brushColor : canvasBackgroundColor;
+    ctx.fillStyle = !isErasing ? playerColor : canvasBackgroundColor;
     ctx.fill();
   }
-
-
 
   // Get the canvas coordinates from the mouse or touch event
   function GetCanvasXY(event: MouseEvent | TouchEvent) {
@@ -76,7 +75,7 @@
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
     ctx.lineTo(canvasX, canvasY);
-    ctx.strokeStyle = !isErasing ? brushColor : canvasBackgroundColor;
+    ctx.strokeStyle = !isErasing ? playerColor : canvasBackgroundColor;
     ctx.lineWidth = brushSize;
     ctx.stroke();
     [lastX, lastY] = [canvasX, canvasY];
