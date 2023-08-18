@@ -2,22 +2,20 @@
   import { onMount } from "svelte";
   export let playerColor: string;
 
-  const canvasId = 'game-canvas';
-  let canvas: HTMLCanvasElement;
+  const canvasId = "game-canvas";
+  let canvas;
   let ctx: CanvasRenderingContext2D;
   let lastX = 0;
   let lastY = 0;
   let isDrawing = false;
-  const canvasBackgroundColor = '#FFF';
+  const canvasBackgroundColor = "#FFF";
 
-  let brushSize = 10;
-  let brushColor = '#000000';
+  let brushSize = 2;
+  let brushColor = "#000000";
   let isErasing = false;
-  
-  
 
   onMount(() => {
-    canvas = document.getElementById(canvasId) as HTMLCanvasElement;
+    canvas = document.getElementById(canvasId);
     ctx = canvas.getContext("2d");
 
     window.addEventListener("resize", resizeCanvas);
@@ -31,9 +29,7 @@
     if (!ctx) return;
     ctx.beginPath();
     ctx.arc(x, y, brushSize / 2, 0, Math.PI * 2);
-    ctx.fillStyle = !isErasing
-      ? brushColor
-      : canvasBackgroundColor;
+    ctx.fillStyle = !isErasing ? brushColor : canvasBackgroundColor;
     ctx.fill();
   }
 
@@ -90,8 +86,8 @@
     if (!isDrawing || !ctx) return;
     event.preventDefault();
     const { canvasX, canvasY } = GetCanvasXY(event);
-    ctx.lineJoin = 'round';
-    ctx.lineCap = 'round';
+    ctx.lineJoin = "round";
+    ctx.lineCap = "round";
     ctx.beginPath();
     ctx.moveTo(lastX, lastY);
     ctx.lineTo(canvasX, canvasY);
@@ -107,16 +103,16 @@
 </script>
 
 <div class="canvas-container">
-<canvas
+  <canvas
     id={canvasId}
-  style="border: 1px solid {playerColor}};"
-  on:mousedown={handleMouseDown}
-  on:mousemove={handleMouseMove}
-  on:mouseup={handleMouseUp}
-  on:touchstart={handleMouseDown}
-  on:touchmove={handleMouseMove}
-  on:touchend={handleMouseUp}
-/>
+    style="border: 1px solid {playerColor}};"
+    on:mousedown={handleMouseDown}
+    on:mousemove={handleMouseMove}
+    on:mouseup={handleMouseUp}
+    on:touchstart={handleMouseDown}
+    on:touchmove={handleMouseMove}
+    on:touchend={handleMouseUp}
+  />
 </div>
 
 <style>
