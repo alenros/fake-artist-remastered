@@ -1,6 +1,7 @@
 <script lang="ts">
   import { io } from "socket.io-client";
   import type { SecretWordModel } from "./models/secret-word-model";
+  import GameCanvas from "./components/GameCanvas.svelte";
 
   const socket = io("http://localhost:5000"); // Connect to the server
 
@@ -115,5 +116,7 @@
     />
   {:else}
     <canvas id="canvas" />
+
+    <GameCanvas playerColor={'red'} />
   {/if}
 </div>

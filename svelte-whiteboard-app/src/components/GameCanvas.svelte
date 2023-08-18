@@ -1,0 +1,123 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+  export let playerColor: string;
+
+  const canvasId = 'game-canvas';
+  let canvas: HTMLCanvasElement;
+  let ctx: CanvasRenderingContext2D;
+  let lastX = 0;
+  let lastY = 0;
+  let isDrawing = false;
+  const canvasBackgroundColor = '#FFF';
+
+  let brushSize = 10;
+  let brushColor = '#000000';
+  let isErasing = false;
+  
+  
+
+  onMount(() => {
+    canvas = document.getElementById(canvasId) as HTMLCanvasElement;
+    ctx = canvas.getContext("2d");
+
+    window.addEventListener("resize", resizeCanvas);
+
+    window.addEventListener("mouseup", () => {
+      handleMouseUp();
+    });
+  });
+
+  function drawDot(x: number, y: number) {
+    if (!ctx) return;
+    ctx.beginPath();
+    ctx.arc(x, y, brushSize / 2, 0, Math.PI * 2);
+    ctx.fillStyle = !isErasing
+      ? brushColor
+      : canvasBackgroundColor;
+    ctx.fill();
+  }
+
+  // Resizes the canvas to fit the parent element
+  // Saves the current canvas image and redraws it after resizing
+  function resizeCanvas() {
+    const parent = canvas.parentElement ?? document.body;
+    const savedImage = canvas.toDataURL();
+
+    canvas.width = parent.clientWidth ?? window.innerWidth;
+    canvas.height = parent.clientHeight ?? window.innerHeight;
+
+    const img = new Image();
+    img.onload = () => {
+      ctx.drawImage(img, 0, 0);
+    };
+    img.src = savedImage;
+  }
+
+  function GetCanvasXY(event: MouseEvent | TouchEvent) {
+    let clientX;
+    let clientY;
+
+    const rect = canvas.getBoundingClientRect();
+    const scaleX = canvas.width / rect.width;
+    const scaleY = canvas.height / rect.height;
+
+    if (event instanceof MouseEvent) {
+      clientX = event.clientX;
+      clientY = event.clientY;
+    } else {
+      // Assume it's a TouchEvent
+      clientX = event.touches[0].clientX;
+      clientY = event.touches[0].clientY;
+    }
+
+    const canvasX = (clientX - rect.left) * scaleX;
+    const canvasY = (clientY - rect.top) * scaleY;
+    return { canvasX, canvasY };
+  }
+
+  function handleMouseDown(event: MouseEvent | TouchEvent) {
+    if (ctx) {
+      event.preventDefault();
+      const { canvasX, canvasY } = GetCanvasXY(event);
+      isDrawing = true;
+      [lastX, lastY] = [canvasX, canvasY];
+
+      drawDot(canvasX, canvasY);
+    }
+  }
+
+  function handleMouseMove(event: MouseEvent | TouchEvent) {
+    if (!isDrawing || !ctx) return;
+    event.preventDefault();
+    const { canvasX, canvasY } = GetCanvasXY(event);
+    ctx.lineJoin = 'round';
+    ctx.lineCap = 'round';
+    ctx.beginPath();
+    ctx.moveTo(lastX, lastY);
+    ctx.lineTo(canvasX, canvasY);
+    ctx.strokeStyle = !isErasing ? brushColor : canvasBackgroundColor;
+    ctx.lineWidth = brushSize;
+    ctx.stroke();
+    [lastX, lastY] = [canvasX, canvasY];
+  }
+
+  function handleMouseUp() {
+    isDrawing = false;
+  }
+</script>
+
+<canvas
+  id="{canvasId}"
+  width="800"
+  height="600"
+  style="border: 1px solid {playerColor}};"
+  on:mousedown={handleMouseDown}
+  on:mousemove={handleMouseMove}
+  on:mouseup={handleMouseUp}
+  on:touchstart={handleMouseDown}
+  on:touchmove={handleMouseMove}
+  on:touchend={handleMouseUp}
+/>
+
+<style>
+</style>
