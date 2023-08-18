@@ -89,7 +89,7 @@
 <div class="canvas-container">
   <canvas
     id={canvasId}
-    style="border: 1px solid {playerColor}};"
+  style="border: 1px solid {playerColor};"
     on:mousedown={handleMouseDown}
     on:mousemove={handleMouseMove}
     on:mouseup={handleMouseUp}
