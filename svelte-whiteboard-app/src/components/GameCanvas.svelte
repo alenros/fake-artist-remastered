@@ -1,6 +1,13 @@
+<!-- TODO: added ability to erase drawings on canvas -->
+<!-- TODO: add ability to pass image from remote to canvas -->
 <script lang="ts">
-  import { onMount } from "svelte";
+  import { onMount, createEventDispatcher } from "svelte";
+  import type {
+    DrawEventType,
+  } from "../models/draw-event-model";
+
   export let playerColor: string;
+  export let room: string;
 
   const canvasId = "game-canvas";
   let canvas;
@@ -11,9 +18,25 @@
   const canvasBackgroundColor = "#FFF";
 
   let brushSize = 2;
-  let brushColor = "#000000";
   let isErasing = false;
 
+  const onCanvasChange = createEventDispatcher();
+
+  // Emit the canvas image data when the canvas changes
+  function emitCanvasChange(drawActiontype: DrawEventType) {
+    if (!ctx) return;
+
+    // might need to change this to a different type later
+    onCanvasChange("canvasChange", {
+      type: drawActiontype,
+      x: lastX,
+      y: lastY,
+      room,
+      color: playerColor,
+    });
+  }
+
+  // On mount, set up the canvas and listeners
   onMount(() => {
     canvas = document.getElementById(canvasId);
     ctx = canvas.getContext("2d");
@@ -63,6 +86,7 @@
       [lastX, lastY] = [canvasX, canvasY];
 
       drawDot(canvasX, canvasY);
+      emitCanvasChange("start");
     }
   }
 
@@ -79,6 +103,7 @@
     ctx.lineWidth = brushSize;
     ctx.stroke();
     [lastX, lastY] = [canvasX, canvasY];
+    emitCanvasChange("move");
   }
 
   function handleMouseUp() {
@@ -86,16 +111,16 @@
   }
 </script>
 
-  <canvas
-    id={canvasId}
+<canvas
+  id={canvasId}
   style="border: 1px solid {playerColor};"
-    on:mousedown={handleMouseDown}
-    on:mousemove={handleMouseMove}
-    on:mouseup={handleMouseUp}
-    on:touchstart={handleMouseDown}
-    on:touchmove={handleMouseMove}
-    on:touchend={handleMouseUp}
-  />
+  on:mousedown={handleMouseDown}
+  on:mousemove={handleMouseMove}
+  on:mouseup={handleMouseUp}
+  on:touchstart={handleMouseDown}
+  on:touchmove={handleMouseMove}
+  on:touchend={handleMouseUp}
+/>
 
 <style>
   canvas {
