@@ -18,8 +18,6 @@
     canvas = document.getElementById(canvasId);
     ctx = canvas.getContext("2d");
 
-    window.addEventListener("resize", resizeCanvas);
-
     window.addEventListener("mouseup", () => {
       handleMouseUp();
     });
@@ -33,22 +31,9 @@
     ctx.fill();
   }
 
-  // Resizes the canvas to fit the parent element
-  // Saves the current canvas image and redraws it after resizing
-  function resizeCanvas() {
-    const parent = this.canvas.parentElement ?? document.body;
-    const savedImage = this.canvas.toDataURL();
 
-    this.canvas.width = parent.clientWidth ?? window.innerWidth;
-    this.canvas.height = parent.clientHeight ?? window.innerHeight;
 
-    const img = new Image();
-    img.onload = () => {
-      ctx.drawImage(img, 0, 0);
-    };
-    img.src = savedImage;
-  }
-
+  // Get the canvas coordinates from the mouse or touch event
   function GetCanvasXY(event: MouseEvent | TouchEvent) {
     let clientX;
     let clientY;
