@@ -106,10 +106,9 @@
   }
 </script>
 
+<div class="canvas-container">
 <canvas
-  id="{canvasId}"
-  width="800"
-  height="600"
+    id={canvasId}
   style="border: 1px solid {playerColor}};"
   on:mousedown={handleMouseDown}
   on:mousemove={handleMouseMove}
@@ -118,6 +117,17 @@
   on:touchmove={handleMouseMove}
   on:touchend={handleMouseUp}
 />
+</div>
 
 <style>
+    .canvas-container{
+        display: grid;
+        padding: 1rem;
+    }
+  canvas {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.8);
+  }
 </style>
