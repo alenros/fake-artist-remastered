@@ -1,5 +1,6 @@
-<script>
+<script lang="ts">
   import { io } from "socket.io-client";
+  import type { SecretWordModel } from "./models/secret-word-model";
 
   const socket = io("http://localhost:5000"); // Connect to the server
 
@@ -10,7 +11,7 @@
   let context;
 
   let room = ""; // To store the current room name
-  let secretWord = ""; // To store the random word
+  let secretWord: SecretWordModel = {Text: "", Category: ""}; // To store the random word
 
   // Event handler for joining a room
   function joinRoom() {
@@ -23,7 +24,7 @@
     socket.emit("leave-room", room);
     room = "";
     playerColor = undefined;
-    secretWord = "";
+    secretWord.Text = "";
   }
 
   function handleMouseDown(event) {
@@ -71,6 +72,7 @@
     });
 
     socket.on("random-word", (word) => {
+      console.log("random word", word);
       secretWord = word;
     });
   }

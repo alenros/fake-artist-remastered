@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import Whiteboard from './Whiteboard.svelte';
 </script>
 
