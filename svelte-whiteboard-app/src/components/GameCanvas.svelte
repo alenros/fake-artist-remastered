@@ -1,10 +1,11 @@
 <!-- TODO: added ability to erase drawings on canvas -->
 <!-- TODO: add ability to pass image from remote to canvas -->
 <script lang="ts">
-  import { onMount, createEventDispatcher } from "svelte";
+  import { onMount, createEventDispatcher, onDestroy } from "svelte";
   import type {
     DrawEventType,
   } from "../models/draw-event-model";
+  import { playerDrawings } from "../stores/drawing-stores";
 
   export let playerColor: string;
   export let room: string;
@@ -19,6 +20,7 @@
 
   let brushSize = 2;
   let isErasing = false;
+  let drawingSubscriptions;
 
   const onCanvasChange = createEventDispatcher();
 
@@ -43,14 +45,24 @@
     window.addEventListener("mouseup", () => {
       handleMouseUp();
     });
+
+    drawingSubscriptions = playerDrawings.subscribe((drawing) => {
+      if (drawing && drawing.room === room) {
+        drawDot(drawing.x, drawing.y, drawing.color);
+      }
+    });
+  });
+
+  onDestroy(() =>{
+    drawingSubscriptions.unsubscribe();
   });
 
   // Draw a dot on the canvas
-  function drawDot(x: number, y: number) {
+  function drawDot(x: number, y: number, brushColor: string = playerColor) {
     if (!ctx) return;
     ctx.beginPath();
     ctx.arc(x, y, brushSize / 2, 0, Math.PI * 2);
-    ctx.fillStyle = !isErasing ? playerColor : canvasBackgroundColor;
+    ctx.fillStyle = !isErasing ? brushColor : canvasBackgroundColor;
     ctx.fill();
   }
 

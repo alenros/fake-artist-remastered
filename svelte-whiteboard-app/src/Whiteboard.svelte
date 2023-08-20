@@ -3,6 +3,7 @@
   import type { SecretWordModel } from "./models/secret-word-model";
   import GameCanvas from "./components/GameCanvas.svelte";
   import type { DrawEventModel } from "./models/draw-event-model";
+  import { playerDrawings } from "./stores/drawing-stores";
 
   const socket = io("http://localhost:5000"); // Connect to the server
 
@@ -59,20 +60,10 @@
     });
   }
 
-  function drawOnCanvas(data) {
-    console.log("drawing on canvas");
-    const { type, x, y } = data;
-
-    if (!context) return;
-    context.strokeStyle = data.color;
-    context.lineWidth = 2;
-
-    if (type === "start") {
-      context.beginPath();
-      context.moveTo(x, y);
-    } else if (type === "move") {
-      context.lineTo(x, y);
-      context.stroke();
+  function drawOnCanvas(data: DrawEventModel) {
+    if(data){
+      console.log("drawing on canvas");
+      playerDrawings.set(data);
     }
   }
 </script>
