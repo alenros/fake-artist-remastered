@@ -1,7 +1,4 @@
-const express = require('express');
-const http = require('http');
-const socketIO = require('socket.io');
-const cors = require('cors');
+const fs = require("fs");
 
 const app = express();
 const server = http.createServer(app);
@@ -25,9 +22,36 @@ const roomPlayerColors = {}; // Object to store the assigned color for each play
 const roomDrawingData = {}; // Object to store drawing data for each room
 const roomWords = {}; // Object to store the random word for each room
 
+function getUserLanguage() {
+  // TODO Implement using navigor.language or through a users choice
+  return "en";
+}
+
+function getWordsFromProvider() {
+  let wordsFilename;
+  switch (getUserLanguage()) {
+    case "en":
+      wordsFilename = "words-en.json";
+      break;
+    case "es":
+      wordsFilename = "words-es.json";
+      break;
+    default:
+      wordsFilename = "words-en.json";
+      break;
+  }
+  
+  const wordsData = fs.readFileSync(`data\\${wordsFilename}`, "utf-8");
+  const words = JSON.parse(wordsData);
+
+  return words;
+}
+
 function generateRandomWord() {
-  const words = [{ 'Text': 'apple', 'Category': 'food' }, { 'Text': 'banana', 'Category': 'food' }, { 'Text': 'carrot', 'Category': 'food' }, { 'Text': 'dog', 'Category': 'animal' }, { 'Text': 'elephant', 'Category': 'animal' }];
-  return words[Math.floor(Math.random() * words.length)];
+  const words = getWordsFromProvider();
+
+  let randomWord = words[Math.floor(Math.random() * words.length)];
+  return randomWord;
 }
 
 io.on('connection', (socket) => {

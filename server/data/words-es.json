@@ -1,0 +1,3598 @@
+[
+    {
+        "Text": "abuela",
+        "Category": "familia"
+    },
+    {
+        "Text": "abuelo",
+        "Category": "familia"
+    },
+    {
+        "Text": "marido",
+        "Category": "familia"
+    },
+    {
+        "Text": "padres",
+        "Category": "familia"
+    },
+    {
+        "Text": "esposa",
+        "Category": "familia"
+    },
+    {
+        "Text": "tío",
+        "Category": "familia"
+    },
+    {
+        "Text": "tía",
+        "Category": "familia"
+    },
+    {
+        "Text": "padre",
+        "Category": "familia"
+    },
+    {
+        "Text": "madre",
+        "Category": "familia"
+    },
+    {
+        "Text": "hermanastra",
+        "Category": "familia"
+    },
+    {
+        "Text": "hermanastro",
+        "Category": "familia"
+    },
+    {
+        "Text": "padrastro",
+        "Category": "familia"
+    },
+    {
+        "Text": "madrastra",
+        "Category": "familia"
+    },
+    {
+        "Text": "padrino",
+        "Category": "familia"
+    },
+    {
+        "Text": "madrina",
+        "Category": "familia"
+    },
+    {
+        "Text": "suegra",
+        "Category": "familia"
+    },
+    {
+        "Text": "suegro",
+        "Category": "familia"
+    },
+    {
+        "Text": "niños",
+        "Category": "familia"
+    },
+    {
+        "Text": "hermano",
+        "Category": "familia"
+    },
+    {
+        "Text": "hermana",
+        "Category": "familia"
+    },
+    {
+        "Text": "primo",
+        "Category": "familia"
+    },
+    {
+        "Text": "nieta",
+        "Category": "familia"
+    },
+    {
+        "Text": "nieto",
+        "Category": "familia"
+    },
+    {
+        "Text": "sobrina",
+        "Category": "familia"
+    },
+    {
+        "Text": "sobrino",
+        "Category": "familia"
+    },
+    {
+        "Text": "Hanukkah",
+        "Category": "festividad"
+    },
+    {
+        "Text": "kwanzaa",
+        "Category": "festividad"
+    },
+    {
+        "Text": "boda",
+        "Category": "festividad"
+    },
+    {
+        "Text": "cumpleaños",
+        "Category": "festividad"
+    },
+    {
+        "Text": "halloween",
+        "Category": "festividad"
+    },
+    {
+        "Text": "octoberfest",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Navidad",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Día de Muertos",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Nochevieja",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Día de San Valentín",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Día de San Patricio",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Día de la madre",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Día de la Independencia",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Black Friday",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Dia de accion de gracias",
+        "Category": "festividad"
+    },
+    {
+        "Text": "elecciones",
+        "Category": "festividad"
+    },
+    {
+        "Text": "Graduación",
+        "Category": "festividad"
+    },
+    {
+        "Text": "pulsera",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "cristal",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "diamante",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "Esmeralda",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "joyas",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "barra de oro",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "perlas",
+        "Category": "objetos valiosos"
+    },
+    {
+        "Text": "bromance",
+        "Category": "social"
+    },
+    {
+        "Text": "seguidor",
+        "Category": "social"
+    },
+    {
+        "Text": "chocar los cinco",
+        "Category": "social"
+    },
+    {
+        "Text": "boda",
+        "Category": "social"
+    },
+    {
+        "Text": "divorcio",
+        "Category": "social"
+    },
+    {
+        "Text": "ene-amigo",
+        "Category": "social"
+    },
+    {
+        "Text": "hula hula",
+        "Category": "juegos"
+    },
+    {
+        "Text": "molinillo",
+        "Category": "juegos"
+    },
+    {
+        "Text": "columpio",
+        "Category": "juegos"
+    },
+    {
+        "Text": "globo",
+        "Category": "juegos"
+    },
+    {
+        "Text": "gameboy",
+        "Category": "juegos"
+    },
+    {
+        "Text": "pinball",
+        "Category": "juegos"
+    },
+    {
+        "Text": "juego de damas",
+        "Category": "juegos"
+    },
+    {
+        "Text": "joystick",
+        "Category": "juegos"
+    },
+    {
+        "Text": "monopolio",
+        "Category": "juegos"
+    },
+    {
+        "Text": "scrabble",
+        "Category": "juegos"
+    },
+    {
+        "Text": "Silla",
+        "Category": "muebles"
+    },
+    {
+        "Text": "taburete de bar",
+        "Category": "muebles"
+    },
+    {
+        "Text": "estantería",
+        "Category": "muebles"
+    },
+    {
+        "Text": "cama de agua",
+        "Category": "muebles"
+    },
+    {
+        "Text": "bañera",
+        "Category": "muebles"
+    },
+    {
+        "Text": "litera",
+        "Category": "muebles"
+    },
+    {
+        "Text": "gabinete",
+        "Category": "muebles"
+    },
+    {
+        "Text": "vestidor",
+        "Category": "muebles"
+    },
+    {
+        "Text": "Cama",
+        "Category": "muebles"
+    },
+    {
+        "Text": "motosierra",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "tijeras",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "pinzas",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "Brújula",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "palanca",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "recogedor",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "engrapadora",
+        "Category": "herramientas"
+    },
+    {
+        "Text": "lápiz labial",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "perfume",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "champú",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "Lima de uñas",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "bloqueador solar",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "tinte para el cabello",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "gel para el cabello",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "máscara",
+        "Category": "artículos de aseo"
+    },
+    {
+        "Text": "computadora",
+        "Category": "informática"
+    },
+    {
+        "Text": "Facebook",
+        "Category": "informática"
+    },
+    {
+        "Text": "firewall",
+        "Category": "informática"
+    },
+    {
+        "Text": "teclado",
+        "Category": "informática"
+    },
+    {
+        "Text": "contraseña",
+        "Category": "informática"
+    },
+    {
+        "Text": "hashtag",
+        "Category": "informática"
+    },
+    {
+        "Text": "MacBook",
+        "Category": "informática"
+    },
+    {
+        "Text": "twitter",
+        "Category": "informática"
+    },
+    {
+        "Text": "Hacha de batalla",
+        "Category": "arma"
+    },
+    {
+        "Text": "bazuca",
+        "Category": "arma"
+    },
+    {
+        "Text": "cañón",
+        "Category": "arma"
+    },
+    {
+        "Text": "catapulta",
+        "Category": "arma"
+    },
+    {
+        "Text": "ballesta",
+        "Category": "arma"
+    },
+    {
+        "Text": "dinamita",
+        "Category": "arma"
+    },
+    {
+        "Text": "pistola",
+        "Category": "arma"
+    },
+    {
+        "Text": "misil",
+        "Category": "arma"
+    },
+    {
+        "Text": "escopeta",
+        "Category": "arma"
+    },
+    {
+        "Text": "Espada",
+        "Category": "arma"
+    },
+    {
+        "Text": "torpedo",
+        "Category": "arma"
+    },
+    {
+        "Text": "Martillo",
+        "Category": "arma"
+    },
+    {
+        "Text": "parche en el ojo",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "venda",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "rodilleras",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "collar",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "piercing de nariz",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "sombrero de fiesta",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "Cordon de zapato",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "paraguas",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "pañuelo",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "arete",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "Liga para el cabello",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "bolso",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "Pañuelo",
+        "Category": "accesorio"
+    },
+    {
+        "Text": "cinturón de castidad",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "Sombrero de copa",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "traje de pantalón",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "pañuelo",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "cinturón",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "bikini",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "botas",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "corbata de moño",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "Sombrero de vaquero",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "gorra",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "abrigo",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "vestido",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "parche en el ojo",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "anteojos",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "guantes",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "Liga para el cabello",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "Sudadera",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "sombrero",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "venda",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "chaqueta",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "vaqueros",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "rodilleras",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "collar",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "mono",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "pijama",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "sombrero de fiesta",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "impermeable",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "sandalias",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "bufanda",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "camisa",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "zapatos",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "falda",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "zapatillas",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "tenis",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "medias",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "sombrero",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "medias",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "traje",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "suéter",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "camisa de entrenamiento",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "traje de baño",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "camiseta",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "corbata",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "pantalones",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "calzoncillos",
+        "Category": "Ropa"
+    },
+    {
+        "Text": "muletas",
+        "Category": "medicina"
+    },
+    {
+        "Text": "caspa",
+        "Category": "medicina"
+    },
+    {
+        "Text": "dentadura postiza",
+        "Category": "medicina"
+    },
+    {
+        "Text": "primeros auxilios",
+        "Category": "medicina"
+    },
+    {
+        "Text": "dolor de cabeza",
+        "Category": "medicina"
+    },
+    {
+        "Text": "hospital",
+        "Category": "medicina"
+    },
+    {
+        "Text": "insomnio",
+        "Category": "medicina"
+    },
+    {
+        "Text": "medicamento",
+        "Category": "medicina"
+    },
+    {
+        "Text": "cortador de papel",
+        "Category": "medicina"
+    },
+    {
+        "Text": "mareado en el mar",
+        "Category": "medicina"
+    },
+    {
+        "Text": "quemado por el sol",
+        "Category": "medicina"
+    },
+    {
+        "Text": "vacuna",
+        "Category": "medicina"
+    },
+    {
+        "Text": "vitamina",
+        "Category": "medicina"
+    },
+    {
+        "Text": "Hong Kong",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Escocia",
+        "Category": "geografía"
+    },
+    {
+        "Text": "America",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Atlanta",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Las Bahamas",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Inglaterra",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Finlandia",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Florida",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Alemania",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Paises Bajos",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Irlanda",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Jamaica",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Nueva York",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Orlando",
+        "Category": "geografía"
+    },
+    {
+        "Text": "Repollo",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Caqui",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Pepino",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Calabacin (Zucchini)",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Sandía",
+        "Category": "Planta"
+    },
+    {
+        "Text": "mango",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Limón",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Lima",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Papa",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Cactus",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Tomate",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Berenjena",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Palmera",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Piña",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Pino",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Flor de San José",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Roble",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Algas marinas",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Bambú",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Zanahoria",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Apio",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Cereza",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Ajo",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Uvas",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Cilantro",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Banano",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Brócoli",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Aguacate / Palta",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Coco",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Duraznos",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Espinaca",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Piña",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Trigo",
+        "Category": "Planta"
+    },
+    {
+        "Text": "Naranja",
+        "Category": "Planta"
+    },
+    {
+        "Text": "columna vertebral",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "frente",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "Bigote",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "pelo de la nariz",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "hombro",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "esqueleto",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "tentáculo",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "bigotes",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "globo ocular",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "ceja",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "pestaña",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "rótula",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "nudillo",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "estómago",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "uniceja",
+        "Category": "anatomía"
+    },
+    {
+        "Text": "Aeropuerto",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Edificio de apartamentos",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Banco",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "peluquería",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Bar",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Granero",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Playa",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Librería",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Bolera (Bolos)",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Parada de autobús",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Casino",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Catedral",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Castillo",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Cementerio",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Iglesia",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Circo",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Tienda de conveniencia (Mini supermercado)",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Palacio de justicia",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Desierto",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Grandes almacenes",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Disco",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Calabozo / Masmorra",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Estación de bomberos",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Jardín",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Gasolinera",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Campo de golf",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Hospital",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Casa",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Biblioteca",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Faro",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Mansión",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Centro comercial",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Cine",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Museo",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Edificio de oficinas",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "teatro de la Ópera",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Huerta",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Palacio",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Tienda de animales",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Estación de policía",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Oficina de correos",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Prisión",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Bar de deportes (Pub)",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Restaurante",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Safari",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Aserradero",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Escuela",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Rascacielos",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Supermercado",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Piscina",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Templo",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Estación de tren",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Teatro",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Parque temático",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Clínica veterinaria",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Zoológico",
+        "Category": "Ubicación"
+    },
+    {
+        "Text": "Avión",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Bicicleta",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Autobús",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Bote / Barco",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Trineo de perros",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Autobús de dos pisos",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Avión F-16",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Carretilla elevadora / grúa horquilla / autoelevador / montacargas",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Formula Uno",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Carro de golf",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Helicóptero",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Aeropatin (Hoverboard)",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Camion de helados",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Carro todoterreno (Jeep)",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Minivan",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Transatlántico",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Carruaje impulsado por personas",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Cohete espacial",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Bote de remos",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Bote de vela",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Scooter",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Nave espacial",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Nave espacial",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Coche deportivo",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Diligencia / Carruaje",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Bote de vapor",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Submarino",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Tractor",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Tren",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Tranvía",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Camión de remolque",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Triciclo",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Remolcador",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Monociclo",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "Yate",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "zepelín",
+        "Category": "Transporte"
+    },
+    {
+        "Text": "AC/DC",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Adele",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Beatles",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Beyoncé",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Billie Eilish",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Bon jovi",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Bruno Mars",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Childish Gambino",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Coldplay",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "David Bowie",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Daft Punk",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Dr. Dre",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Drake",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Ed Shiran",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Elton John",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Eminem",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Guns and Roses",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Jay Z",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Justin Bieber",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Justin Timberlake",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Kanye West",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Katy Perry",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Lady Gaga",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Led Zeppelin",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Mariah Carey",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Michael Jackson",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Muse",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Nicki Minaj",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Nirvana",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Pink Floyd",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Pitbull",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Prince",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Queen",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Rihana",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Skrillex",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Snoop Dogg",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Taylor Swift",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "The Black Eyed Peas",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Tupac Shakur",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "U2",
+        "Category": "Grupo de música"
+    },
+    {
+        "Text": "Dubstep",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "House",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Rock",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Hip hop",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Blues",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Pop",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Jazz",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Música clásica",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "R&B",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Heavy metal",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Punk",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Música Country",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Reggae",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Música de elevador",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Disco",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Techno",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "J-pop",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Grunge",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Rap",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Música Swing",
+        "Category": "Género musical"
+    },
+    {
+        "Text": "Gaita",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Bajo",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Tocadiscos tragamonedas",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Trombón",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Batería",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Ukelele",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Guitarra electrica",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Piano",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Violín",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Saxofón",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Violinchello",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Flauta",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Clarinete",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Trompeta",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Harmónica",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Arpa",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Banjo",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Castañuelas  / Palillos",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Platillo",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Maraca",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Marimba",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Pandereta",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Triángulo",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Tabla de lavar",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Xilófono",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Acordeón",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Bocina / Corneta / Pito",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Ocarina",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Silbido",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Tuba",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Violín",
+        "Category": "Instrumento musical"
+    },
+    {
+        "Text": "Genio",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Minotauro",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Alfombra mágica",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Grifo",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Minotauro",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Pie Grande",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Quimera",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Cíclope",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Centauro",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Sirena",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Pegaso",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Fénix",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Unicornio",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Vampiro",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Dragón",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Dríada",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Fantasma",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Medusa",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Mantícora",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Sátiro",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Esfinge",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Hombre-lobo",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Zombi",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Momia",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Golem",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Guerrera amazónica",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Gente lagarto",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Basilisco",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Duende",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Hada",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Demonio necrófago",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Diablillo",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Troll",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Ogro",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Ninfa",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Gigante",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Duende",
+        "Category": "Mitología"
+    },
+    {
+        "Text": "Angelina Jolie",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Bob Dylan",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Brad Pitt",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Bruce Lee",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Kate Moss",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Lady Gaga",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "lil wayne",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "ludacris",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "MC Hammer",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Tom Hanks",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "beckham",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "colbert",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Jay Leno",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Lincoln",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "picasso",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "rihanna",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "van Gogh",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Justin Bieber",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "eminem",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "gandhi",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Madonna",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "pitbull",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Vincent Van Gogh",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "Donald Trump",
+        "Category": "persona famosa"
+    },
+    {
+        "Text": "tiro al arco",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "béisbol",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Baloncesto",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "bolos",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Boxeo",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Curling",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Cricket",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "pesa",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Esgrima",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "pesca",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "fútbol americano",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "frisbee",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Portería",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Golf",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "balonmano",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "homerun",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "patinaje sobre hielo",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "jabalina",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Salto a la cuerda",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Salto de longitud",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "mini golf",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Juegos Olímpicos",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "ping pong",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "árbitro",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Escalada deportiva",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Slam dunk (Clavada baloncesto)",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "trineo",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "fútbol",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Surf",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Natación",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Tenis",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Vóleibol",
+        "Category": "Deportes"
+    },
+    {
+        "Text": "Autobots",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Catwoman",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Garfield",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Iron Chef (Cocinero de Hierro)",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Superman",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Aladín",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Aquaman",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "asterix",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Hawkeye (Ojo de halcón)",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "metroid",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Pikachu",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Riddler (Acertijo)",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "rugrats",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Twoface (Dos caras)",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "avatar",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Barbie",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Batman",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Beavis",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Bowser",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "La leyenda de Zelda",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Mickey Mouse",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Voldemort",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Conan el bárbaro",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Los Simpsons",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Rick y Morty",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "La Rana Gustavo / La Rana René / Kermit",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Bob Esponja",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Simba",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Scooby Doo",
+        "Category": "Cultura pop"
+    },
+    {
+        "Text": "Artista",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Asesino",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Barbero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Carnicero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Capitán",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Cajero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Chef",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Payaso",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Cocinero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Vaquero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Vaquera",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Dentista",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "DJ",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Doctor",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Baterista",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Agricultor",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Bombero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Hacker",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Gangster / Pandillero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Jardinero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Gimnasta",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Conserje",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Abogado",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Mago",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Cartero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Lechero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Director de cine",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Cantante de opera",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Pintor",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Piloto",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Plomero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Policía",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Piscinero (Cuidador de piscina)",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Sacerdote",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Princesa",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Alguacil / Sheriff",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Soldado",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Cirujano",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Maestro",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Mesero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Guerrero",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Limpiador de ventanas",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "Luchador",
+        "Category": "Profesión"
+    },
+    {
+        "Text": "cerdo hormiguero",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Alpaca",
+        "Category": "Animal"
+    },
+    {
+        "Text": "hormiga",
+        "Category": "Animal"
+    },
+    {
+        "Text": "oso hormiguero",
+        "Category": "Animal"
+    },
+    {
+        "Text": "armadillo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "babuino",
+        "Category": "Animal"
+    },
+    {
+        "Text": "tejón",
+        "Category": "Animal"
+    },
+    {
+        "Text": "murciélago",
+        "Category": "Animal"
+    },
+    {
+        "Text": "oso",
+        "Category": "Animal"
+    },
+    {
+        "Text": "castor",
+        "Category": "Animal"
+    },
+    {
+        "Text": "abeja",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pájaro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "búfalo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "toro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Becerro / Novillo / Ternero",
+        "Category": "Animal"
+    },
+    {
+        "Text": "camello",
+        "Category": "Animal"
+    },
+    {
+        "Text": "gato",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Oruga",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Pez bagre",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Camaleón",
+        "Category": "Animal"
+    },
+    {
+        "Text": "guepardo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pollo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "chimpancé",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Chihuahua",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Cigarra",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cucaracha",
+        "Category": "Animal"
+    },
+    {
+        "Text": "vaca",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Grulla",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cangrejo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Grillo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cocodrilo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "ciervo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "dinosaurio",
+        "Category": "Animal"
+    },
+    {
+        "Text": "perro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "delfín",
+        "Category": "Animal"
+    },
+    {
+        "Text": "burro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pato",
+        "Category": "Animal"
+    },
+    {
+        "Text": "libélula",
+        "Category": "Animal"
+    },
+    {
+        "Text": "águila",
+        "Category": "Animal"
+    },
+    {
+        "Text": "elefante",
+        "Category": "Animal"
+    },
+    {
+        "Text": "luciérnaga",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pez",
+        "Category": "Animal"
+    },
+    {
+        "Text": "flamenco",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Mosca",
+        "Category": "Animal"
+    },
+    {
+        "Text": "zorro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Rana",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Jirafa",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cabra",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Pez dorado",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Ganso",
+        "Category": "Animal"
+    },
+    {
+        "Text": "gorila",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Saltamontes",
+        "Category": "Animal"
+    },
+    {
+        "Text": "hámster",
+        "Category": "Animal"
+    },
+    {
+        "Text": "hipopótamo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "caballo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "hiena",
+        "Category": "Animal"
+    },
+    {
+        "Text": "jaguar",
+        "Category": "Animal"
+    },
+    {
+        "Text": "canguro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "gatito",
+        "Category": "Animal"
+    },
+    {
+        "Text": "mariquita",
+        "Category": "Animal"
+    },
+    {
+        "Text": "leopardo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "león",
+        "Category": "Animal"
+    },
+    {
+        "Text": "lagarto",
+        "Category": "Animal"
+    },
+    {
+        "Text": "llama",
+        "Category": "Animal"
+    },
+    {
+        "Text": "langosta",
+        "Category": "Animal"
+    },
+    {
+        "Text": "mamut",
+        "Category": "Animal"
+    },
+    {
+        "Text": "mono",
+        "Category": "Animal"
+    },
+    {
+        "Text": "mosquito",
+        "Category": "Animal"
+    },
+    {
+        "Text": "alce",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Ratón",
+        "Category": "Animal"
+    },
+    {
+        "Text": "narval",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pulpo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "avestruz",
+        "Category": "Animal"
+    },
+    {
+        "Text": "nutria",
+        "Category": "Animal"
+    },
+    {
+        "Text": "búho",
+        "Category": "Animal"
+    },
+    {
+        "Text": "ostra",
+        "Category": "Animal"
+    },
+    {
+        "Text": "panda",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Pangolín",
+        "Category": "Animal"
+    },
+    {
+        "Text": "loro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pantera",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pavo real",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pelícano",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pingüino",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cerdo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "paloma",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pitbull",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Ornitorrinco",
+        "Category": "Animal"
+    },
+    {
+        "Text": "puerco espín",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Poodle (Caniche)",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cachorro",
+        "Category": "Animal"
+    },
+    {
+        "Text": "conejo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "mapache",
+        "Category": "Animal"
+    },
+    {
+        "Text": "rata",
+        "Category": "Animal"
+    },
+    {
+        "Text": "reno",
+        "Category": "Animal"
+    },
+    {
+        "Text": "reptil",
+        "Category": "Animal"
+    },
+    {
+        "Text": "rinoceronte",
+        "Category": "Animal"
+    },
+    {
+        "Text": "gallo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "escorpión",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Gaviota",
+        "Category": "Animal"
+    },
+    {
+        "Text": "caballo de mar",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Foca",
+        "Category": "Animal"
+    },
+    {
+        "Text": "tiburón",
+        "Category": "Animal"
+    },
+    {
+        "Text": "oveja",
+        "Category": "Animal"
+    },
+    {
+        "Text": "camarón",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Zorrillo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "caracol",
+        "Category": "Animal"
+    },
+    {
+        "Text": "serpiente",
+        "Category": "Animal"
+    },
+    {
+        "Text": "araña",
+        "Category": "Animal"
+    },
+    {
+        "Text": "calamar",
+        "Category": "Animal"
+    },
+    {
+        "Text": "ardilla",
+        "Category": "Animal"
+    },
+    {
+        "Text": "estrella de mar",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cigüeña",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cisne",
+        "Category": "Animal"
+    },
+    {
+        "Text": "renacuajo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "tigre",
+        "Category": "Animal"
+    },
+    {
+        "Text": "sapo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pez tropical",
+        "Category": "Animal"
+    },
+    {
+        "Text": "atún",
+        "Category": "Animal"
+    },
+    {
+        "Text": "pavo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "tortuga",
+        "Category": "Animal"
+    },
+    {
+        "Text": "tortuga",
+        "Category": "Animal"
+    },
+    {
+        "Text": "buitre",
+        "Category": "Animal"
+    },
+    {
+        "Text": "morsa",
+        "Category": "Animal"
+    },
+    {
+        "Text": "ballena",
+        "Category": "Animal"
+    },
+    {
+        "Text": "lobo",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Gusano",
+        "Category": "Animal"
+    },
+    {
+        "Text": "cebra",
+        "Category": "Animal"
+    },
+    {
+        "Text": "Tocino",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Baguette",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Barbacoa (BBQ)",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Frijoles",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Cerveza",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Burrito",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Pastel",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Cereal",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "champán",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Queso",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Alitas de pollo",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Café",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Corndog",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Croissant",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Magdalena / Cupcake",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Rollo de huevo / Eggroll",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Café expresso",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Comida rápida",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Salchipapas",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Glaseado",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Hamburguesa",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Salsa picante",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Comida chatarra",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Brocheta",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Salsa de tomate",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Lasaña",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Limonada",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Macarrones",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "martini",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Puré de patatas",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "albóndigas",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Leche",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Champiñón",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Mostaza",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Fideos",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Avena",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Pancake",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Pasta",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Tarta",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Pizza",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Palomitas",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Galleta salada",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Calabaza",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Ensalada",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Sándwich",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Embutido / Salchicha",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Comida de mar",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Smothie / Batido de frutas",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Cono de nieve",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Salsa de soja",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Sushi",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Té",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Tequila",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Waffles",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Whisky",
+        "Category": "Alimento"
+    },
+    {
+        "Text": "Horror",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Acción",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Suspenso",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Ciencia ficción",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Comedia romántica",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "occidental",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Comedia",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Gángster / Pandillas",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Guerra",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Documental",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Mockumentary / Falso documental",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Musical",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Animación",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Desastres",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Zombis",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "Deporte",
+        "Category": "Géneros cinematográficos"
+    },
+    {
+        "Text": "La Naranja Mecánica",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Armagedon",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Alien",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Austin Powers",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Los Vengadores",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Regreso al futuro",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Corazón Valiente (Braveheart)",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Beetlejuice",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Duro de Matar (Die Hard)",
+        "Category": "Películas"
+    },
+    {
+        "Text": "E.T.",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Fargo",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Buscando a Nemo",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Forrest Gump",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Frozen",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Gladiador",
+        "Category": "Películas"
+    },
+    {
+        "Text": "James Bond: Golden Eye",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Lo que el viento se llevó",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Groundhog Day",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Solo en casa / Mi pobre angelito",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Inception / El Origen",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Indiana Jones",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Bastardos sin gloria",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Mandíbulas / Jaws",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Parque jurásico / Jurassic Park",
+        "Category": "Películas"
+    },
+    {
+        "Text": "King Kong",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Rey Leon",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Mary Poppins",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Sentencia Previa (Minority Report)",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Misión imposible",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Monty Python y el Santo Grial",
+        "Category": "Películas"
+    },
+    {
+        "Text": "La princesa prometida / Caballero negro / El pirata y la princesa / La princesa que quería soñar / Princess Bride",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Pulp Fiction / Tiempos Violentos",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Espectáculo de imágenes de terror rocoso",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Rocky Balboa",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Saving Private Ryan /  Rescatando al soldado Ryan / Salvar al soldado Ryan",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Caracortada / Scarface",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Shrek",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Guerra de las Galaxias / Star Wars",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Terminator",
+        "Category": "Películas"
+    },
+    {
+        "Text": "El bueno, el feo y el malo / El bueno, el malo y el feo / The Good, the Bad and the Ugly",
+        "Category": "Películas"
+    },
+    {
+        "Text": "The Green Mile / La milla verde / Milagros inesperados",
+        "Category": "Películas"
+    },
+    {
+        "Text": "El Señor de los Anillos",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Matrix",
+        "Category": "Películas"
+    },
+    {
+        "Text": "The Shawshank Redemption / Cadena perpetua / Sueños de libertad / Escape a la libertad / Sueño de fuga",
+        "Category": "Películas"
+    },
+    {
+        "Text": "La Red Social / The Social Network",
+        "Category": "Películas"
+    },
+    {
+        "Text": "El mago de Oz",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Titanic",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Toy Story",
+        "Category": "Películas"
+    },
+    {
+        "Text": "West Side Story / Amor sin barreras",
+        "Category": "Películas"
+    },
+    {
+        "Text": "La Mujer Maravilla",
+        "Category": "Películas"
+    },
+    {
+        "Text": "X Men",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Robocop",
+        "Category": "Películas"
+    },
+    {
+        "Text": "Gomitas",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Bucanero / Submarino",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Chupeta / Bombón",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Paleta de hielo",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Skittles / Sparkies",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Brownie",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Galleta",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Doritos",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Helado",
+        "Category": "Aperitivos"
+    },
+    {
+        "Text": "Las pirámides",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "estatua del Cristo Redentor",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "La gran muralla china",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Torre inclinada de Pisa",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "edificio Empire State",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Coliseo de Roma",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "La torre Eiffel",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Estatua de la Libertad",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "La Esfinge",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "La Sirenita",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "El Taj Mahal",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Big Ben",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Lago Ness",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Puerta de Brandenburgo",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Acrópólis de Atenas",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Stonehenge",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "isla de Pascua",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Plaza del Capitolio",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Cataratas del Niagara",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Monte Rushmore",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "gran Cañón",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Fontana de Trevi (Roma)",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Ópera de Sídney",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Golden Gate Bridge",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "La ciudad Prohibida",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "El Kremlin",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Museo del Louvre",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "The Hollywood Sign",
+        "Category": "Sitio famoso"
+    },
+    {
+        "Text": "Cenicienta",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Los tres cerditos",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "El patito feo",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "El soldadito de Plomo",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "La princesa y el guisante",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Pulgarcita",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "La Sirenita",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "El traje nuevo del emperador / El rey desnudo",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Ricitos de oro y los tres osos",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Bella Durmiente",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Blancanieves",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Rapunzel",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "El príncipe rana",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Hansel y Gretel",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Rumpelstiltskin / Enano saltarín",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "El ganso de oro",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "El gato con botas",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Aladín",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "La bella y la Bestia",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Ali baba y los cuarenta ladrones",
+        "Category": "Cuento de hadas"
+    },
+    {
+        "Text": "Sinbad",
+        "Category": "Cuento de hadas"
+    }
+]
