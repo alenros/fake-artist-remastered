@@ -34,6 +34,39 @@
     joinedRoom = false;
   }
 
+  function handleMouseDown(event) {
+    if (!canvas) return;
+    const { offsetX, offsetY } = event;
+    drawing = true;
+
+    socket.emit("draw", {
+      type: "start",
+      x: offsetX,
+      y: offsetY,
+      room,
+      color: playerColor,
+    });
+  }
+
+  function handleMouseMove(event) {
+    if (!canvas) return;
+    if (!drawing) return;
+    const { offsetX, offsetY } = event;
+
+    socket.emit("draw", {
+      type: "move",
+      x: offsetX,
+      y: offsetY,
+      room,
+      color: playerColor,
+    });
+  }
+
+  function handleMouseUp(event) {
+    if (!canvas) return;
+    drawing = false;
+  }
+
   function handleCanvasEvent(event: CustomEvent<DrawEventModel>) {
     socket.emit("draw", event.detail);
   }
