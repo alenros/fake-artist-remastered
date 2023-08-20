@@ -4,6 +4,7 @@
   import GameCanvas from "./components/GameCanvas.svelte";
   import type { DrawEventModel } from "./models/draw-event-model";
   import { playerDrawings } from "./stores/drawing-stores";
+  import GameRoomControls from "./components/GameRoomControls.svelte";
 
   const socket = io("http://localhost:5000"); // Connect to the server
 
@@ -15,19 +16,22 @@
 
   let room = ""; // To store the current room name
   let secretWord: SecretWordModel = { Text: "", Category: "" }; // To store the random word
+  let joinedRoom = false;
 
   // Event handler for joining a room
-  function joinRoom() {
-    if (room.trim() === "") return;
-    socket.emit("join-room", room);
+  function joinRoom(event: CustomEvent<string>) {
+    if (event.detail.trim() === "") return;
+    room = event.detail;
+    socket.emit("join-room", event.detail);
   }
 
   // Event handler for leaving the current room
-  function leaveRoom() {
-    socket.emit("leave-room", room);
+  function leaveRoom(event: CustomEvent<string>) {
+    socket.emit("leave-room", event.detail);
     room = "";
     playerColor = undefined;
     secretWord.Text = "";
+    joinedRoom = false;
   }
 
   function handleCanvasEvent(event: CustomEvent<DrawEventModel>) {
@@ -52,6 +56,7 @@
     socket.on("player-color", (color) => {
       console.log("player color", color);
       playerColor = color;
+      joinedRoom = true;
     });
 
     socket.on("random-word", (word) => {
@@ -69,11 +74,8 @@
 </script>
 
 <div>
-  <h2>Enter Room Name:</h2>
-  <input bind:value={room} placeholder="Room name" />
-  <button on:click={joinRoom}>Join Room</button>
-  {#if room}
-    <button on:click={leaveRoom}>Leave Room</button>
+  <GameRoomControls {joinedRoom} {room} on:join-room={joinRoom} on:leave-room={leaveRoom} />
+  {#if joinedRoom}
     {#if secretWord.Text}
       The category is {secretWord.Category} and the word is {secretWord.Text}
     {/if}
