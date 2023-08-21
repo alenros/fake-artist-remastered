@@ -2,9 +2,7 @@
 <!-- TODO: add ability to pass image from remote to canvas -->
 <script lang="ts">
   import { onMount, createEventDispatcher, onDestroy } from "svelte";
-  import type {
-    DrawEventType,
-  } from "../models/draw-event-model";
+  import type { DrawEventType } from "../models/draw-event-model";
   import { playerDrawings } from "../stores/drawing-stores";
 
   export let playerColor: string;
@@ -17,7 +15,8 @@
   let lastY = 0;
   let isDrawing = false;
   const canvasBackgroundColor = "#FFF";
-
+  let lastRX = 0;
+  let lastRY = 0;
   let brushSize = 2;
   let isErasing = false;
   let drawingSubscriptions;
@@ -48,12 +47,28 @@
 
     drawingSubscriptions = playerDrawings.subscribe((drawing) => {
       if (drawing && drawing.room === room) {
-        drawDot(drawing.x, drawing.y, drawing.color);
+        if(drawing.type === "start"){
+          drawDot(drawing.x, drawing.y, drawing.color);
+          lastRX = drawing.x;
+          lastRY = drawing.y;
+        }
+        else {
+          ctx.lineJoin = "round";
+          ctx.lineCap = "round";
+          ctx.beginPath();
+          ctx.moveTo(lastRX, lastRY);
+          ctx.lineTo(drawing.x, drawing.y);
+          ctx.strokeStyle = drawing.color;
+          ctx.lineWidth = brushSize;
+          ctx.stroke();
+          lastRX = drawing.x;
+          lastRY = drawing.y;
+        }
       }
     });
   });
 
-  onDestroy(() =>{
+  onDestroy(() => {
     drawingSubscriptions.unsubscribe();
   });
 
