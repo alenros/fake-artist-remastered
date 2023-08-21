@@ -8,11 +8,7 @@
 
   const socket = io("http://localhost:5000"); // Connect to the server
 
-  let drawing = false;
   let playerColor; // Variable to store the player's assigned color
-
-  let canvas;
-  let context;
 
   let room = ""; // To store the current room name
   let secretWord: SecretWordModel = { Text: "", Category: "" }; // To store the random word
