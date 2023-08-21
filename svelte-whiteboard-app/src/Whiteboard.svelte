@@ -49,7 +49,9 @@
 
     socket.on("existing-drawings", (existingDrawings) => {
       existingDrawings.forEach((data) => {
-        drawOnCanvas(data);
+        if(data.color !== playerColor){
+          drawOnCanvas(data);
+        }
       });
     });
 
