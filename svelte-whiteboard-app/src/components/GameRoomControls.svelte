@@ -22,8 +22,10 @@
 
 <form>
     <label for="room">Room:</label>
-    <input type="text" id="room" bind:value={room} />
-    <button type="button" on:click={joinRoom}>Join Room</button>
+    <input type="text" id="room" bind:value={room} readonly={joinedRoom} />
+    {#if !joinedRoom}
+        <button type="button" on:click={joinRoom}>Join Room</button>
+    {/if}
     {#if joinedRoom}
         <button type="button" on:click={leaveRoom}>Leave Room</button>
     {/if}

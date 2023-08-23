@@ -3,7 +3,7 @@
   import type { SecretWordModel } from "./models/secret-word-model";
   import GameCanvas from "./components/GameCanvas.svelte";
   import type { DrawEventModel } from "./models/draw-event-model";
-  import { playerDrawings } from "./stores/drawing-stores";
+  import { playerDrawings, updateDrawing } from "./stores/drawing-stores";
   import GameRoomControls from "./components/GameRoomControls.svelte";
 
   const socket = io("http://localhost:5000"); // Connect to the server
@@ -19,6 +19,7 @@
     if (event.detail.trim() === "") return;
     room = event.detail;
     socket.emit("join-room", event.detail);
+    joinedRoom = true;
   }
 
   // Event handler for leaving the current room
@@ -54,7 +55,6 @@
     socket.on("player-color", (color) => {
       console.log("player color", color);
       playerColor = color;
-      joinedRoom = true;
     });
 
     socket.on("random-word", (word) => {
@@ -66,7 +66,7 @@
   function drawOnCanvas(data: DrawEventModel) {
     if(data){
       console.log("drawing on canvas");
-      playerDrawings.set(data);
+      updateDrawing(data);
     }
   }
 </script>

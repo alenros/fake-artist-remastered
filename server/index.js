@@ -19,7 +19,7 @@ app.get('/', function (req, res, next) {
   res.json({ msg: 'This is CORS-enabled for all origins!'})
 })
 
-const colors = ['#e4007f', '#62828', '#D62828', '#F77F00', '#88D18A', '#8A5CFF', '#F1D302', '#235789','#00C49A']; // List of available colors
+const colors = ['#e4007f', '#009933', '#D62828', '#F77F00', '#88D18A', '#8A5CFF', '#F1D302', '#235789','#00C49A']; // List of available colors
 
 const roomPlayerColors = {}; // Object to store the assigned color for each player in a room
 const roomDrawingData = {}; // Object to store drawing data for each room
