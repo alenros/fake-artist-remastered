@@ -3,7 +3,7 @@
 </script>
 
 <main>
-  <h1>Realtime Multiplayer Collaborative Whiteboard</h1>
+  <h1>A Fake Artist Goes to New-York</h1>
   <Whiteboard />
 </main>
 
