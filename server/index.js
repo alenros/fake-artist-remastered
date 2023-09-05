@@ -144,7 +144,6 @@ io.on('connection', (socket) => {
   });
 
   socket.on('draw', (data) => {
-    console.log(`Client ${socket.id} drawing in room ${data.room} and data is ${data.room}`);
     if (socket.currentRoom && socket.currentRoom === data.room) {
       io.to(socket.currentRoom).emit('draw', data);
 
