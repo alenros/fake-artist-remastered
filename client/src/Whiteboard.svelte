@@ -57,15 +57,17 @@
 
     socket.on("existing-drawings", (existingDrawings) => {
       existingDrawings.forEach((data) => {
-        if(data.color !== playerColor){
+        if (data.color !== playerColor) {
           drawOnCanvas(data);
         }
       });
     });
 
-    socket.on("player-color", (color) => {
-      console.log("player color", color);
-      playerColor = color;
+    function drawOnCanvas(data: DrawEventModel) {
+      if (data) {
+        updateDrawing(data);
+      }
+    }
 
     socket.on("game-started", (gameData) => {
       hasGameStarted = true;
@@ -78,7 +80,7 @@
         if (v.playerId == currentPlayerId) {
           playerColor = v.color;
         }
-    });
+      });
     });
   }
 
@@ -93,12 +95,32 @@
   function requestEndGame() {
     socket.emit("end-game", room);
   }
+
+  async function requestFromServerDemo() {
+    var response = await fetch(`http://localhost:5000/api/v1/rooms/${room}`);
+    var currentPlayerDetails = await response.json();
+
+    var playerId = sessionStorage.getItem("playerId");
+    var response = await fetch(
+      `http://localhost:5000/api/v1/players/${playerId}`
+    );
+    var currentPlayerDetails = await response.json();
+    isFakeArtist = currentPlayerDetails.isFakeArtist;
+    if (hasGameStarted === false) {
+      hasGameStarted = true;
+      socket.emit("start-game");
     }
   }
 </script>
 
 <div>
-  <GameRoomControls {joinedRoom} {room} on:join-room={joinRoom} on:leave-room={leaveRoom} />
+  <GameRoomControls
+    {joinedRoom}
+    {room}
+    on:join-room={joinRoom}
+    on:leave-room={leaveRoom}
+  />
+  
   {#if joinedRoom}
     {#if !hasGameStarted}
       <button on:click={requestStartGame}>Start Game</button>
@@ -115,7 +137,7 @@
         {/if}
       </div>
 
-    {#if secretWord.Text}
+      {#if secretWord.Text}
         <div>
           <p>
             Category: {secretWord.Category}

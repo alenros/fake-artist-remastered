@@ -18,6 +18,7 @@
   let lastRY = 0;
   let brushSize = 2;
   let isErasing = false;
+
   const drawingSubscriptions = playerDrawings.subscribe((drawing) => {
     if (ctx) {
       if (drawing && drawing.room === room) {

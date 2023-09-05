@@ -7,14 +7,13 @@
     const joinRoomDispatcher = createEventDispatcher();
     const leaveRoomDispatcher = createEventDispatcher();
 
-
-    function joinRoom(){
+    function joinRoom() {
         if (room.trim() === "") return;        
 
         joinRoomDispatcher("join-room", room);
     }
 
-    function leaveRoom(){
+    function leaveRoom() {
         leaveRoomDispatcher("leave-room", room);
     }
 
