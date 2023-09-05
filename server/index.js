@@ -24,6 +24,8 @@ const colors = ['#e4007f', '#009933', '#D62828', '#F77F00', '#88D18A', '#8A5CFF'
 const roomPlayerColors = {}; // Object to store the assigned color for each player in a room
 const roomDrawingData = {}; // Object to store drawing data for each room
 const roomWords = {}; // Object to store the random word for each room
+const roomPlayers = {};
+const roomGameHasStarted = {};
 
 function getUserLanguage() {
   // TODO Implement using navigor.language or through a users choice
@@ -59,6 +61,8 @@ function generateRandomWord() {
 
 io.on('connection', (socket) => {
   console.log('New client connected:', socket.id);
+  let sessionData = { "playerId": socket.id };
+  socket.emit("set-session-data", sessionData);
 
   socket.on('join-room', (room) => {
     console.log(`Client ${socket.id} joined room ${room}`);
@@ -68,17 +72,20 @@ io.on('connection', (socket) => {
     socket.currentRoom = room;
     socket.join(room);
 
-    const playerColor = colors[Object.keys(roomPlayerColors).length % colors.length];
-    roomPlayerColors[socket.id] = playerColor;
-    socket.emit('player-color', playerColor);
-
-    // Generate and assign a random word to the room
-    if (!roomWords[room]) {
-      const randomWord = generateRandomWord();
-      roomWords[room] = randomWord;
+    // Add Player to room
+    if (!roomPlayers[room]) {
+      roomPlayers[room] = [];
     }
+    roomPlayers[room].push(socket.id);
 
-    socket.emit('random-word', roomWords[room]);
+    if (roomGameHasStarted[room]) {
+      // Set spectator color to grey
+      var playersToColors = { playerId: socket.id, color: "#33ff33" };
+
+      var gameData = { secretWord: roomWords[room], fakeArtistPlayerId: "", playersToColors: playersToColors, isSpectator: true }
+
+      socket.emit("game-started", gameData);
+    }
 
     // Send existing drawing data to the client
     if (roomDrawingData[room]) {
@@ -106,6 +113,41 @@ io.on('connection', (socket) => {
       }
       roomDrawingData[data.room].push(data);
     }
+  });
+
+  socket.on('start-game', (room) => {
+    console.log(`got start game request for ${room}`);
+
+    // Generate and assign a random word to the room
+    const randomWord = generateRandomWord();
+    roomWords[room] = randomWord;
+    var playersInRoom = [];
+
+    roomGameHasStarted[room] = true;
+
+    roomPlayers[room].forEach(p => {
+      playersInRoom.push(p);
+    });
+
+    var fakeArtistPlayerId = playersInRoom[Math.floor(Math.random() * playersInRoom.length)];
+
+    var playersToColors = playersInRoom.map((p, index) => { return { playerId: p, color: colors[index % colors.length] } });
+    var gameData = { secretWord: roomWords[room], fakeArtistPlayerId: fakeArtistPlayerId, playersToColors: playersToColors, isSpectator: false }
+
+    // TODO Fix the dual send
+    socket.to(room).emit("game-started", gameData);
+    socket.emit("game-started", gameData);
+  });
+
+  socket.on('end-game', (room) => {
+    console.log(`got end game request for ${room}`);
+
+    // Generate and assign a random word to the room
+    roomWords[room] = '';
+    roomGameHasStarted[room] = false;
+    // TODO Fix the dual send
+    socket.to(room).emit("game-ended");
+    socket.emit("game-ended");
   });
 
   socket.on('disconnect', () => {

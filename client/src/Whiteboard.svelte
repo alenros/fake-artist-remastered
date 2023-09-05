@@ -13,6 +13,9 @@
   let room = ""; // To store the current room name
   let secretWord: SecretWordModel = { Text: "", Category: "" }; // To store the random word
   let joinedRoom = false;
+  let isFakeArtist = true;
+  let hasGameStarted = false;
+  let isSpectator = false;
 
   // Event handler for joining a room
   function joinRoom(event: CustomEvent<string>) {
@@ -32,8 +35,16 @@
   }
 
   function handleCanvasEvent(event: CustomEvent<DrawEventModel>) {
+    if (isSpectator) {
+      return;
+    }
+
     socket.emit("draw", event.detail);
   }
+
+  socket.on("set-session-data", (data) => {
+    sessionStorage.setItem("playerId", data.playerId);
+  });
 
   $: if (room) {
     console.log(
@@ -55,18 +66,33 @@
     socket.on("player-color", (color) => {
       console.log("player color", color);
       playerColor = color;
-    });
 
-    socket.on("random-word", (word) => {
-      console.log("random word", word);
-      secretWord = word;
+    socket.on("game-started", (gameData) => {
+      hasGameStarted = true;
+      var currentPlayerId = sessionStorage.getItem("playerId");
+      isFakeArtist = gameData.fakeArtistPlayerId == currentPlayerId;
+      secretWord = gameData.secretWord;
+      isSpectator = gameData.isSpectator;
+
+      gameData.playersToColors.forEach((v) => {
+        if (v.playerId == currentPlayerId) {
+          playerColor = v.color;
+        }
+    });
     });
   }
 
-  function drawOnCanvas(data: DrawEventModel) {
-    if(data){
-      console.log("drawing on canvas");
-      updateDrawing(data);
+  socket.on("game-ended", (gameData) => {
+    hasGameStarted = false;
+  });
+
+  function requestStartGame() {
+    socket.emit("start-game", room);
+  }
+
+  function requestEndGame() {
+    socket.emit("end-game", room);
+  }
     }
   }
 </script>
@@ -74,9 +100,42 @@
 <div>
   <GameRoomControls {joinedRoom} {room} on:join-room={joinRoom} on:leave-room={leaveRoom} />
   {#if joinedRoom}
+    {#if !hasGameStarted}
+      <button on:click={requestStartGame}>Start Game</button>
+    {:else}
+      <button on:click={requestEndGame}>End Game</button>
+      <div>
+        Role:
+        {#if isFakeArtist}
+          Fake-Artist
+        {:else if isSpectator}
+          Spectator
+        {:else}
+          Real Artist
+        {/if}
+      </div>
+
     {#if secretWord.Text}
-      The category is {secretWord.Category} and the word is {secretWord.Text}
+        <div>
+          <p>
+            Category: {secretWord.Category}
+          </p>
+          <p>
+            Word:
+            {#if isFakeArtist}
+              ???
+            {:else}
+              {secretWord.Text}
+            {/if}
+          </p>
+        </div>
+      {/if}
+      <GameCanvas
+        {playerColor}
+        {room}
+        {isSpectator}
+        on:canvasChange={handleCanvasEvent}
+      />
     {/if}
-    <GameCanvas {playerColor} {room} on:canvasChange={handleCanvasEvent} />
   {/if}
 </div>

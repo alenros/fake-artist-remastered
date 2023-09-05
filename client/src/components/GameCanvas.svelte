@@ -5,6 +5,7 @@
 
   export let playerColor: string;
   export let room: string;
+  export let isSpectator: boolean;
 
   const canvasId = "game-canvas";
   let canvas;
@@ -100,6 +101,10 @@
   }
 
   function handleMouseDown(event: MouseEvent | TouchEvent) {
+    if (isSpectator) {
+      return;
+    }
+
     if (ctx) {
       event.preventDefault();
       const { canvasX, canvasY } = GetCanvasXY(event);
@@ -112,6 +117,10 @@
   }
 
   function handleMouseMove(event: MouseEvent | TouchEvent) {
+    if (isSpectator) {
+      return;
+    }
+
     if (!isDrawing || !ctx) return;
     event.preventDefault();
     const { canvasX, canvasY } = GetCanvasXY(event);
@@ -128,6 +137,9 @@
   }
 
   function handleMouseUp() {
+    if (isSpectator) {
+      return;
+    }
     isDrawing = false;
   }
 </script>
