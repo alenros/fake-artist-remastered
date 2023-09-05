@@ -19,6 +19,24 @@ app.get('/', function (req, res, next) {
   res.json({ msg: 'This is CORS-enabled for all origins!' })
 })
 
+app.post('/api/v1/rooms', (req, res, next) => {
+  var playerId = req.params.playerId;
+  if (playerId === undefined) {
+    var playerId = generateUserID();
+  }
+
+  var accessCode = generateAccessCode();
+
+  console.log(`creating room ${accessCode} requested by ${playerId}`);
+
+  // io.socket.currentRoom = accessCode;
+  // io.socket.join(accessCode);
+
+  enterRoom(accessCode, playerId);
+
+  res.json({ accessCode, playerId });
+});
+
 const colors = ['#e4007f', '#009933', '#D62828', '#F77F00', '#88D18A', '#8A5CFF', '#F1D302', '#235789', '#00C49A']; // List of available colors
 
 const roomPlayerColors = {}; // Object to store the assigned color for each player in a room
@@ -45,7 +63,7 @@ function getWordsFromProvider() {
       wordsFilename = "words-en.json";
       break;
   }
-  
+
   const wordsData = fs.readFileSync(`data\\${wordsFilename}`, "utf-8");
   const words = JSON.parse(wordsData);
 
@@ -59,39 +77,61 @@ function generateRandomWord() {
   return randomWord;
 }
 
+function generateAccessCode() {
+  let accessCodeLength = 5;
+  let accessCode = "";
+
+  for (var i = 0; i < accessCodeLength; i++) {
+    let randomDigit = Math.floor(Math.random() * 10);
+    accessCode = accessCode + randomDigit;
+  }
+
+  return accessCode;
+}
+
+function generateUserID() {
+  return "player-" + generateAccessCode();
+}
+
+function enterRoom(room, playerId) {
+  // Add Player to room
+  if (!roomPlayers[room]) {
+    roomPlayers[room] = [];
+  }
+
+  roomPlayers[room].push(playerId);
+
+  if (roomGameHasStarted[room]) {
+    // Set spectator color to grey
+    var playersToColors = { playerId: socket.id, color: "#33ff33" };
+
+    var gameData = { secretWord: roomWords[room], fakeArtistPlayerId: "", playersToColors: playersToColors, isSpectator: true }
+
+    io.socket.to(room).emit("game-started", gameData);
+  }
+
+  // Send existing drawing data to the client
+  if (roomDrawingData[room]) {
+    io.socket.to(room).emit('existing-drawings', roomDrawingData[room]);
+  }
+}
+
 io.on('connection', (socket) => {
+
   console.log('New client connected:', socket.id);
 
   let sessionData = { "playerId": socket.id };
   socket.emit("set-session-data", sessionData);
 
-  socket.on('join-room', (room) => {
-    console.log(`Client ${socket.id} joined room ${room}`);
+  socket.on('join-room', ({ roomId, playerId }) => {
+    console.log(`Client ${playerId} joined room ${roomId}`);
     if (socket.currentRoom) {
       socket.leave(socket.currentRoom);
     }
-    socket.currentRoom = room;
-    socket.join(room);
+    socket.currentRoom = roomId;
+    socket.join(roomId);
 
-    // Add Player to room
-    if (!roomPlayers[room]) {
-      roomPlayers[room] = [];
-    }
-    roomPlayers[room].push(socket.id);
-
-    if (roomGameHasStarted[room]) {
-      // Set spectator color to grey
-      var playersToColors = { playerId: socket.id, color: "#33ff33" };
-
-      var gameData = { secretWord: roomWords[room], fakeArtistPlayerId: "", playersToColors: playersToColors, isSpectator: true }
-
-      socket.emit("game-started", gameData);
-    }
-
-    // Send existing drawing data to the client
-    if (roomDrawingData[room]) {
-      socket.emit('existing-drawings', roomDrawingData[room]);
-    }
+    enterRoom(roomId, playerId);
   });
 
   socket.on('leave-room', (room) => {

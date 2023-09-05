@@ -16,11 +16,30 @@
   let isFakeArtist = true;
   let hasGameStarted = false;
   let isSpectator = false;
+  let playerId: string = "";
+
+  async function createRoom(event: CustomEvent<string>) {
+    if (event.detail.trim() === "") return;
+
+    var playerId = event.detail;
+    var requestBody = JSON.stringify({ playerId: `${playerId}` });
+
+    var response = await fetch(`http://localhost:5000/api/v1/rooms`, {
+      method: "POST",
+      body: requestBody,
+    });
+    var newRoomDetails = await response.json();
+    room = newRoomDetails.accessCode;
+    playerId = newRoomDetails.playerId;
+    sessionStorage.setItem("playerId", playerId);
+
+    joinedRoom = true;
+  }
 
   // Event handler for joining a room
-  function joinRoom(event: CustomEvent<string>) {
-    if (event.detail.trim() === "") return;
-    room = event.detail;
+  function joinRoom(event: CustomEvent<{ roomId: string; playerId: string }>) {
+    if (event.detail.roomId.trim() === "") return;
+    room = event.detail.roomId;
     socket.emit("join-room", event.detail);
     joinedRoom = true;
   }
@@ -44,6 +63,7 @@
 
   socket.on("set-session-data", (data) => {
     sessionStorage.setItem("playerId", data.playerId);
+    playerId = data.playerId;
   });
 
   $: if (room) {
@@ -117,6 +137,8 @@
   <GameRoomControls
     {joinedRoom}
     {room}
+    {playerId}
+    on:create-room={createRoom}
     on:join-room={joinRoom}
     on:leave-room={leaveRoom}
   />
