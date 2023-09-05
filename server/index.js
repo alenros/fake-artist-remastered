@@ -155,8 +155,8 @@ io.on('connection', (socket) => {
     }
   });
 
-  socket.on('start-game', (room) => {
-    console.log(`got start game request for ${room}`);
+  socket.on('start-game', ({room, playerId}) => {
+    console.log(`got start game request for room ${room} by player ${playerId}`);
 
     // Generate and assign a random word to the room
     const randomWord = generateRandomWord();
@@ -179,8 +179,8 @@ io.on('connection', (socket) => {
     socket.emit("game-started", gameData);
   });
 
-  socket.on('end-game', (room) => {
-    console.log(`got end game request for ${room}`);
+  socket.on('end-game', ({room, playerId}) => {
+    console.log(`got end game request for for room ${room} by player ${playerId}`);
 
     // Generate and assign a random word to the room
     roomWords[room] = '';

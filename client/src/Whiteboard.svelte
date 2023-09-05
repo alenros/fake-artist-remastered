@@ -109,11 +109,13 @@
   });
 
   function requestStartGame() {
-    socket.emit("start-game", room);
+    var playerId = sessionStorage.getItem("playerId");
+    socket.emit("start-game", {room,playerId: playerId});
   }
 
   function requestEndGame() {
-    socket.emit("end-game", room);
+    var playerId = sessionStorage.getItem("playerId");
+    socket.emit("end-game", {room,playerId: playerId});
   }
 
   async function requestFromServerDemo() {
